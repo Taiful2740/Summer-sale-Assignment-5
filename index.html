@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+
+    <!-- Daisyui link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Banner Section  -->
+      <section class="grid lg:grid-cols-2 bg-[#F9F6E2] h-screen">
+        <div class="flex flex-col mt-4 text-center justify-center">
+          <h5 class="text-2xl font-semibold md:text-2xl lg:text-3xl">
+            ---SALE FEVER---
+          </h5>
+          <h1 class="text-4xl font-bold px-10 mt-4 md:text-4xl lg:text-6xl">
+            Purchase TK 200 or above & get
+            <span
+              class="text-[#E527B2] text-4xl font-bold mt-4 md:text-4xl lg:text-6xl"
+              >20% off</span
+            >
+          </h1>
+          <div class="flex text-center justify-center mt-6">
+            <p class="text-2xl font-medium mr-4">Use Promo Code</p>
+            <button
+              class="bg-[#E527B2] rounded-md text-2xl font-medium py-2 text-white -mt-2 md:text-2xl lg:text-3xl p-3"
+            >
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            class="h-[400px] w-[400px] md:-ml-[50px]"
+            src="./images/Summer 1.png"
+            alt="image"
+          />
+        </div>
+      </section>
+    </header>
+    <main class="max-w-screen-xl mx-auto px-6 md:px-10 lg:px-24 py-5 my-6">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <!-- Sportswear and Furniture section -->
+        <div
+          class="card rounded-[8px] w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
+        >
+          <div class="rounded-xl m-5 bg-[#F3F3F3]">
+            <figure class="px-10 pt-10 -mt-5 mb-5">
+              <img src="./images/prod1.png" />
+            </figure>
+          </div>
+          <div class="card-body items-center text-center">
+            <div class="rating -mt-5">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <h2 class="card-title mt-2">K. Accessories</h2>
+            <p class="mt-2 text-[#888888]">39.00 TK</p>
+          </div>
+        </div>
+        <!-- Coupon and Purchase section -->
+        <div>
+          <div
+            class="card rounded-[8px] w-64 bg-base-100 mt-14 md:mt-[210px] shadow-xl ml-[85px] md:ml-0"
+          >
+            <div class="card-body">
+              <h2 class="card-title">Have coupon?</h2>
+              <div>
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="coupon-field"
+                    class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-l-2 border border-gray-300"
+                    placeholder="Coupon code"
+                    required
+                  />
+                  <button
+                    id="coupon-btn"
+                    type="submit"
+                    disabled
+                    class="absolute cursor-pointer top-0 right-0 p-2.5 text-sm font-medium h-full text-white coupon-Valid bg-[#E527B2] rounded-r-lg border border-[#E527B2] hover:bg-[#f705b6]"
+                  >
+                    <h1>Apply</h1>
+                    <span class="sr-only"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
