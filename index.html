@@ -73,7 +73,7 @@
               <!-- Card-1  -->
 
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -116,7 +116,7 @@
               </div>
               <!-- Card-2  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -159,7 +159,7 @@
               </div>
               <!-- Card-3  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -213,7 +213,7 @@
               <!-- Card-1  -->
 
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -256,7 +256,7 @@
               </div>
               <!-- Card-2  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -299,7 +299,7 @@
               </div>
               <!-- Card-3  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -353,7 +353,7 @@
               <!-- Card-1  -->
 
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -396,7 +396,7 @@
               </div>
               <!-- Card-2  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -439,7 +439,7 @@
               </div>
               <!-- Card-3  -->
               <div
-                onclick="handleClickBtn(this)"
+                onclick="addProductHandler(this)"
                 class="card rounded-lg w-auto md:w-80 h-[360px] bg-base-100 shadow-xl cursor-pointer"
               >
                 <div class="rounded-xl m-5 bg-[#F3F3F3]">
@@ -502,7 +502,7 @@
                     required
                   />
                   <button
-                    id="coupon-btn"
+                    id="coupon-button"
                     type="submit"
                     disabled
                     class="absolute cursor-pointer top-0 right-0 p-2.5 text-sm font-medium h-full text-white coupon-Valid bg-[#E527B2] rounded-r-lg border border-[#E527B2] hover:bg-[#f705b6]"
@@ -520,7 +520,7 @@
             <div class="card-body">
               <div>
                 <ol
-                  id="cart-name"
+                  id="card-name"
                   class="list-decimal text-2xl font-medium pl-7 flex flex-col gap-3"
                 ></ol>
               </div>
@@ -529,17 +529,17 @@
                 <p>
                   Total price :
                   <span id="total-price" class="text-[#6e6d6d]">00</span
-                  ><span id="tk" class="text-[#6e6d6d]">TK</span>
+                  ><span id="taka" class="text-[#6e6d6d]">TK</span>
                 </p>
                 <p>
                   Discount :
-                  <span id="discount-container" class="text-[#6e6d6d]">00</span
-                  ><span id="tk" class="text-[#6e6d6d]">TK</span>
+                  <span id="discount-section" class="text-[#6e6d6d]">00</span
+                  ><span id="taka" class="text-[#6e6d6d]">TK</span>
                 </p>
                 <p>
                   Total :
                   <span class="text-[#6e6d6d]" id="total-result">00</span
-                  ><span id="tk" class="text-[#6e6d6d]">TK</span>
+                  ><span id="taka" class="text-[#6e6d6d]">TK</span>
                 </p>
               </div>
               <div class="bg-gray-300 h-[1px] w-[200px] -ml-2 mt-2"></div>
@@ -586,6 +586,7 @@
           </div>
         </div>
       </section>
+      <script src="js/index.js"></script>
     </main>
   </body>
 </html>
